@@ -1,0 +1,16 @@
+README.md
+
+*.txt   # ignore *.txt in the target directory
+*/*.txt # ignore *.txt in subdirectories of the target directory
+*.md   # ignore *.md in the target directory
+*/*.md # ignore *.md in subdirectories of the target directory
+
+{{- if ne .email "ismaelhommani@gmail.com" }}
+# Ignore specific workstation dotfiles
+.mpd # note that the pattern is not dot_company-directory
+{{- end }}
+
+#define data.category in the chezmoi config file
+{{- if eq .category "profesional" }}
+.gamerc
+{{- end }}
