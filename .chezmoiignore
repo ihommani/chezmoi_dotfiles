@@ -11,6 +11,6 @@ README.md
 {{- end }}
 
 #define data.category in the chezmoi config file
-{{- if eq .category "profesional" }}
-.gamerc
-{{- end }}
+#{{- if eq .category "profesional" }}
+#.gamerc
+#{{- end }}
