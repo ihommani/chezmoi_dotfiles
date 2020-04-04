@@ -7,5 +7,6 @@ README.md
 
 {{- if ne .email "ismaelhommani@gmail.com" }}
 # Ignore specific workstation dotfiles
-.mpd # note that the pattern is not dot_company-directory
+.mpd # note that the pattern is not dot_foo
+.rtorrent.rc
 {{- end }}
